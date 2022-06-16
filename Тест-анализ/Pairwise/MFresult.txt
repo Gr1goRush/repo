@@ -1,0 +1,122 @@
+
+TEST CASES
+case	Size	Language	Register	Misprint	Space	pairings
+1	One_word	Russian	Big	Non	Before	10
+2	One_letter	English	Small	One	Before	10
+3	51_simbol	russian_on_english	Together	Without_one_letter	Before	10
+4	One_word	English	Together	Non	After	9
+5	One_letter	Russian	Big	Without_one_letter	After	9
+6	51_simbol	Russian	Small	One	After	8
+7	One_word	russian_on_english	Small	Without_one_letter	Without	9
+8	One_letter	English	Big	Non	Without	6
+9	51_simbol	Russian	Together	One	Without	6
+10	51_simbol	English	Big	Without_one_letter	By letter	7
+11	One_letter	russian_on_english	Small	Non	By letter	7
+12	One_word	russian_on_english	Big	One	By letter	6
+13	One_letter	Russian	Together	~Without_one_letter	By letter	3
+14	51_simbol	russian_on_english	~Big	Non	After	2
+
+PAIRING DETAILS
+var1	var2	value1	value2	appearances	cases
+Space	Size	Before	One_word	1	1
+Space	Size	Before	One_letter	1	2
+Space	Size	Before	51_simbol	1	3
+Space	Size	After	One_word	1	4
+Space	Size	After	One_letter	1	5
+Space	Size	After	51_simbol	2	6, 14
+Space	Size	Without	One_word	1	7
+Space	Size	Without	One_letter	1	8
+Space	Size	Without	51_simbol	1	9
+Space	Size	By letter	One_word	1	12
+Space	Size	By letter	One_letter	2	11, 13
+Space	Size	By letter	51_simbol	1	10
+Space	Language	Before	Russian	1	1
+Space	Language	Before	English	1	2
+Space	Language	Before	russian_on_english	1	3
+Space	Language	After	Russian	2	5, 6
+Space	Language	After	English	1	4
+Space	Language	After	russian_on_english	1	14
+Space	Language	Without	Russian	1	9
+Space	Language	Without	English	1	8
+Space	Language	Without	russian_on_english	1	7
+Space	Language	By letter	Russian	1	13
+Space	Language	By letter	English	1	10
+Space	Language	By letter	russian_on_english	2	11, 12
+Space	Register	Before	Big	1	1
+Space	Register	Before	Small	1	2
+Space	Register	Before	Together	1	3
+Space	Register	After	Big	2	5, 14
+Space	Register	After	Small	1	6
+Space	Register	After	Together	1	4
+Space	Register	Without	Big	1	8
+Space	Register	Without	Small	1	7
+Space	Register	Without	Together	1	9
+Space	Register	By letter	Big	2	10, 12
+Space	Register	By letter	Small	1	11
+Space	Register	By letter	Together	1	13
+Space	Misprint	Before	Non	1	1
+Space	Misprint	Before	One	1	2
+Space	Misprint	Before	Without_one_letter	1	3
+Space	Misprint	After	Non	2	4, 14
+Space	Misprint	After	One	1	6
+Space	Misprint	After	Without_one_letter	1	5
+Space	Misprint	Without	Non	1	8
+Space	Misprint	Without	One	1	9
+Space	Misprint	Without	Without_one_letter	1	7
+Space	Misprint	By letter	Non	1	11
+Space	Misprint	By letter	One	1	12
+Space	Misprint	By letter	Without_one_letter	2	10, 13
+Size	Language	One_word	Russian	1	1
+Size	Language	One_word	English	1	4
+Size	Language	One_word	russian_on_english	2	7, 12
+Size	Language	One_letter	Russian	2	5, 13
+Size	Language	One_letter	English	2	2, 8
+Size	Language	One_letter	russian_on_english	1	11
+Size	Language	51_simbol	Russian	2	6, 9
+Size	Language	51_simbol	English	1	10
+Size	Language	51_simbol	russian_on_english	2	3, 14
+Size	Register	One_word	Big	2	1, 12
+Size	Register	One_word	Small	1	7
+Size	Register	One_word	Together	1	4
+Size	Register	One_letter	Big	2	5, 8
+Size	Register	One_letter	Small	2	2, 11
+Size	Register	One_letter	Together	1	13
+Size	Register	51_simbol	Big	2	10, 14
+Size	Register	51_simbol	Small	1	6
+Size	Register	51_simbol	Together	2	3, 9
+Size	Misprint	One_word	Non	2	1, 4
+Size	Misprint	One_word	One	1	12
+Size	Misprint	One_word	Without_one_letter	1	7
+Size	Misprint	One_letter	Non	2	8, 11
+Size	Misprint	One_letter	One	1	2
+Size	Misprint	One_letter	Without_one_letter	2	5, 13
+Size	Misprint	51_simbol	Non	1	14
+Size	Misprint	51_simbol	One	2	6, 9
+Size	Misprint	51_simbol	Without_one_letter	2	3, 10
+Language	Register	Russian	Big	2	1, 5
+Language	Register	Russian	Small	1	6
+Language	Register	Russian	Together	2	9, 13
+Language	Register	English	Big	2	8, 10
+Language	Register	English	Small	1	2
+Language	Register	English	Together	1	4
+Language	Register	russian_on_english	Big	2	12, 14
+Language	Register	russian_on_english	Small	2	7, 11
+Language	Register	russian_on_english	Together	1	3
+Language	Misprint	Russian	Non	1	1
+Language	Misprint	Russian	One	2	6, 9
+Language	Misprint	Russian	Without_one_letter	2	5, 13
+Language	Misprint	English	Non	2	4, 8
+Language	Misprint	English	One	1	2
+Language	Misprint	English	Without_one_letter	1	10
+Language	Misprint	russian_on_english	Non	2	11, 14
+Language	Misprint	russian_on_english	One	1	12
+Language	Misprint	russian_on_english	Without_one_letter	2	3, 7
+Register	Misprint	Big	Non	3	1, 8, 14
+Register	Misprint	Big	One	1	12
+Register	Misprint	Big	Without_one_letter	2	5, 10
+Register	Misprint	Small	Non	1	11
+Register	Misprint	Small	One	2	2, 6
+Register	Misprint	Small	Without_one_letter	1	7
+Register	Misprint	Together	Non	1	4
+Register	Misprint	Together	One	1	9
+Register	Misprint	Together	Without_one_letter	2	3, 13

@@ -1,0 +1,5 @@
+Size	Language	Register	Misprint	Space
+One_word	Russian	Big	Non	Before
+One_letter	English	Small	One	After
+51_simbol	russian_on_english	Together	Without_one_letter	Without
+				By letter
